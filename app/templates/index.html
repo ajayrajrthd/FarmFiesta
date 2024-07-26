@@ -1,0 +1,113 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- banner -->
+<div id="google_translate_element"></div>
+<section class="banner_w3lspvt" id="home">
+	<div class="csslider infinity" id="slider1">
+	
+				<div class="banner-top">
+					<div class="overlay">
+						<div class="container">
+							<div class="w3layouts-banner-info text-center">
+								<h3 class="text-wh">Farm-Fiesta</h3>
+								<h4 class="text-wh mx-auto my-4"><b>What Can we Do?</b></h4>
+								<br>
+								<h4 class="text-wh mx-auto my-4"><strong>Features You will find</strong></h4>
+								<p class="text-li mx-auto mt-2">
+									1. Get what crops you can grow<br>
+									2. Detect Disease on your crop<br>
+									3. Shop for your needs<br>
+							</div>
+						</div>
+					</div>
+				</div>
+	</div>
+</section>
+<!-- //banner -->
+
+<!-- core values -->
+<section class="core-value py-5">
+	<div class="container py-md-4">
+		<h3 class="heading mb-sm-5 mb-4 text-center"> About Us</h3>
+		<div class="row core-grids">
+			<div class="col-lg-6 core-left">
+				<img src="{{ url_for('static', filename='images/5.jpg') }}" alt="" />
+			</div>
+			<div class="col-lg-6 core-right">
+				<h3 class="mt-4">Improving Agriculture, Improving Lives, Cultivating Crops To Make Farmers Increase
+					Profit.</h3>
+				<p class="mt-3">We use state-of-the-art machine learning and deep learning technologies to help you
+					guide through
+					the entire farming process. Make informed decisions to understand the demographics of your area,
+					understand the
+					factors that affect your crop and keep them healthy for a super awesome successful yield.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //core values -->
+
+<!-- Products & Services -->
+<section class="core-value py-5">
+	<div class="container py-md-4">
+		<h3 class="heading mb-sm-5 mb-4 text-center"> Our Services</h3>
+		<a href="{{ url_for('crop_recommend') }}">
+		<div class="row core-grids">
+			<div class="col-lg-6 core-left">
+				<img src="{{ url_for('static', filename='images/farm_background.jpg') }}" alt="" />
+			</div>
+			<div class="col-lg-6 core-right">
+				<h3 class="mt-4">Crop Recommendation</h3>
+				<p class="mt-3">It is a feature where you can get recommendation for crops according to inputs like ph, temperature, rainfall etc.</p>
+			</div>
+		</div>
+		</a>
+	</div>
+</section>
+
+
+
+<section class="core-value py-5">
+	<div class="container py-md-4">
+		<a href="{{ url_for('disease_prediction') }}">
+		<div class="row core-grids">
+			<div class="col-lg-6 core-left">
+				<img src="{{ url_for('static', filename='images/Disease.jpg') }}" alt="" />
+			</div>
+			<div class="col-lg-6 core-right">
+				<h3 class="mt-4">Disease Detection</h3>
+				<p class="mt-3">It is a feature where you can detect disease on image basis.</p>
+			</div>
+		</div>
+		</a>
+	</div>
+</section>
+<!-- //Products & Services -->
+
+
+<!-- Creating custom grid and hover effect
+<section>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/s2.jpg" alt="">
+        <div class="overlay">
+           <h2>Hover effect 1</h2>
+           <a class="info" href="#">link here</a>
+        </div>
+    </div>
+</div> -->
+
+<script src="https://translate.google.com/traanslate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+	function googleTranslateElementInit(){
+		new google.translate.TranslateElement(
+			{pageLanguage: 'en'},
+			'google_translate_element'
+		);
+	}
+</script>
+
+</html>
+
+{% endblock %}
