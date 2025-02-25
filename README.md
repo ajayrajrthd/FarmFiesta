@@ -65,4 +65,4 @@ npm start
 - Machine Learning Models: Enhance predictive accuracy for diseases and recommendations.
 - Image Recognition: Improve the ability to identify plant diseases, pests, and deficiencies.
 - Collaboration with Experts: Ensure recommendations align with agricultural research.
-- E-commerce Module: Provide an online store for fertilizers, pesticides, and farming tools
+- E-commerce Module: Provide an online store for fertilizers, pesticides, and farming tools.
