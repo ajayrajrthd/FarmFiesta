@@ -37,7 +37,7 @@ FarmFiesta consists of:
 ### 📥 Install Dependencies
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/farmfiesta.git
+git clone https://github.com/ajayrajrthd/farmfiesta.git
 cd farmfiesta
 
 # Install backend dependencies
